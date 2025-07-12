@@ -1,76 +1,187 @@
 ---
-title: 快速开始
-description: "FluentAI 安装和初始化设置指南"
+title: "快速开始"
+description: "5分钟内完成 FluentAI 的安装和配置"
 ---
 
-欢迎使用 FluentAI！本指南将帮助您快速完成安装和初始配置。
-
-## 下载安装
-
-### Windows 用户
-1. 点击页面顶部的 "下载 Windows 版" 按钮
-2. 下载完成后运行安装程序
-3. 按照安装向导完成安装
-
-### Mac 用户
-1. 点击页面顶部的 "下载 Mac 版" 按钮
-2. 下载完成后打开 .dmg 文件
-3. 将 FluentAI 拖拽到应用程序文件夹
-
-## 首次启动
-
-启动 FluentAI 后，您需要完成以下步骤：
+## 三步上手
 
 <Steps>
-  <Step title="配置 API">
-    首次使用需要配置 AI 服务商的 API 密钥
+  <Step title="下载安装">
+    从官网下载适合您系统的安装包并完成安装
   </Step>
-  <Step title="选择模型">
-    从支持的模型中选择您需要的 AI 助手
+  <Step title="配置 API">
+    添加您首选的 AI 服务商 API 密钥
   </Step>
   <Step title="开始对话">
-    一切准备就绪，开始您的 AI 对话之旅
+    选择模型，开始您的第一次 AI 对话
   </Step>
 </Steps>
 
-## 基本设置
+## 下载和安装
 
-### 访问设置
-进入设置的方式：
-- **首页 → 偏好设置**
-- 或使用快捷键（具体快捷键请查看应用内提示）
+1. 点击页面右上角的 **"立即下载"** 按钮
+2. 下载适合您系统的安装包
+3. 按照系统提示完成安装
+4. 启动 FluentAI 应用程序
 
-### 主要配置项
+## 快速配置
+
+### 推荐配置方案
+
+<Tabs>
+  <Tab title="新手推荐">
+    **DeepSeek（推荐）**
+    - 性价比最高
+    - 中文支持优秀
+    - 配置简单
+
+    <Steps>
+      <Step title="获取 API 密钥">
+        访问 [DeepSeek 平台](https://platform.deepseek.com) 注册并获取 API 密钥
+      </Step>
+      <Step title="在 FluentAI 中配置">
+        打开设置 → API设置 → 添加供应商 → 选择 DeepSeek
+      </Step>
+      <Step title="输入密钥">
+        粘贴您的 API 密钥并保存
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="专业用户">
+    **多模型配置**
+    - OpenAI GPT-4：复杂分析任务
+    - Claude 3.5：长文档处理
+    - DeepSeek：日常对话
+
+    建议同时配置 2-3 个服务商，根据任务类型灵活切换。
+  </Tab>
+
+  <Tab title="隐私优先">
+    **Ollama 本地部署**
+    - 完全本地运行
+    - 数据不出本地
+    - 需要较高硬件配置
+
+    <Steps>
+      <Step title="安装 Ollama">
+        访问 [Ollama 官网](https://ollama.ai) 下载安装
+      </Step>
+      <Step title="下载模型">
+        运行 `ollama pull llama2` 或其他模型
+      </Step>
+      <Step title="连接 FluentAI">
+        在 FluentAI 中选择 Ollama 供应商
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## 第一次对话
+
+配置完成后，您可以立即开始对话：
+
 <CardGroup cols={2}>
   <Card
-    title="API 设置"
-    icon="key"
-    href="/guide/api-config"
+    title="简单问答"
+    icon="comments"
   >
-    配置各种 AI 服务商的 API 密钥
+    "请解释一下人工智能的基本概念"
   </Card>
   <Card
-    title="模型管理"
-    icon="robot"
-    href="/guide/models"
+    title="内容创作"
+    icon="pen-to-square"
   >
-    添加和管理不同的 AI 模型
+    "帮我写一份项目计划书的大纲"
+  </Card>
+  <Card
+    title="编程助手"
+    icon="code"
+  >
+    "用 Python 写一个计算斐波那契数列的函数"
+  </Card>
+  <Card
+    title="数据分析"
+    icon="magnifying-glass"
+  >
+    "分析一下这组数据的趋势特征"
   </Card>
 </CardGroup>
 
-## 小贴士
+## 快捷功能
 
-<Tip>
-首次使用建议先配置一个您熟悉的 AI 服务商（如 OpenAI 或 DeepSeek），这样可以快速体验 FluentAI 的功能。
-</Tip>
+FluentAI 提供多种快捷功能帮您提高效率：
 
-<Warning>
-请妥善保管您的 API 密钥，不要在公共场所或与他人分享。FluentAI 会安全地存储您的密钥信息。
-</Warning>
+### 快捷 Prompt 模板
+- **写作模板**：邮件、报告、文案等
+- **编程模板**：代码生成、调试、解释
+- **分析模板**：数据分析、市场研究
+- **创意模板**：营销策划、设计思路
+
+## 故障排除
+
+### 常见问题快速解决
+
+<AccordionGroup>
+  <Accordion icon="key" title="API 密钥无效">
+    1. 检查密钥是否复制完整
+    2. 确认密钥是否已激活
+    3. 验证账户余额是否充足
+    4. 检查 API 权限设置
+  </Accordion>
+
+  <Accordion icon="wifi" title="网络连接问题">
+    1. 检查网络连接
+    2. 尝试切换网络环境
+    3. 检查防火墙设置
+    4. 确认代理配置正确
+  </Accordion>
+
+  <Accordion icon="exclamation-triangle" title="模型响应慢">
+    1. 尝试切换到更快的模型
+    2. 减少单次请求的内容长度
+    3. 检查 API 服务状态
+    4. 优化网络环境
+  </Accordion>
+</AccordionGroup>
 
 ## 下一步
 
-完成基本设置后，您可以：
-- [配置 API 密钥](/guide/api-config) - 详细的 API 配置教程
-- [选择合适的模型](/guide/models) - 了解不同模型的特点
-- [开始对话](/guide/chat) - 学习如何有效地使用 AI 助手
+恭喜！您已经成功完成了 FluentAI 的基础配置。现在您可以：
+
+<CardGroup cols={2}>
+  <Card
+    title="深入了解配置"
+    icon="gear"
+    href="/guide/api-config"
+  >
+    学习更详细的 API 配置方法
+  </Card>
+  <Card
+    title="探索更多模型"
+    icon="robot"
+    href="/guide/models"
+  >
+    了解不同模型的特点和选择方法
+  </Card>
+  <Card
+    title="提高对话技巧"
+    icon="comments"
+    href="/guide/chat"
+  >
+    学习如何更有效地与 AI 对话
+  </Card>
+  <Card
+    title="查看完整功能"
+    icon="star"
+    href="/features"
+  >
+    探索 FluentAI 的所有强大功能
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+需要帮助？请查看我们的 [完整使用指南](/guide/setup) 或联系 [技术支持](mailto:support@fluentai.com)。
+</Note>
