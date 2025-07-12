@@ -51,3 +51,7 @@
 - Use absolute URLs for internal links
 - Include untested code examples
 - Make assumptions - always ask for clarification
+
+# And More
+
+- No Emoji. Use Icon.
