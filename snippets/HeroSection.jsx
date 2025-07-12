@@ -55,7 +55,7 @@ export const HeroSection = () => {
               </div>
               
               <div className="version-info">
-                <span>最新版本 v2.1.0</span>
+                <span>最新版本 v1.0.0</span>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ export const HeroSection = () => {
       </main>
 
       {/* 特性预览 */}
-      <section className="features-preview">
+      {/* <section className="features-preview">
         <div className="features-container">
           <div className="feature-card">
             <div className="feature-icon">
@@ -118,6 +118,9 @@ export const HeroSection = () => {
             <p>毫秒级操作响应</p>
           </div>
         </div>
+      </section> */}
+      <section style={{ textAlign: 'center', color: '#666', marginTop: '2rem', fontSize: '14px' }}>
+        <p>FluentDeskAI 2025</p>
       </section>
 
     </div>
