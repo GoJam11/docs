@@ -24,13 +24,7 @@
         "groups": [
           {
             "group": "配置教程",
-            "pages": [
-              "guide/setup",
-              "guide/api-config",
-              "guide/models",
-              "guide/chat",
-              "features"
-            ]
+            "pages": ["guide/setup", "guide/api-config"]
           }
         ]
       }
