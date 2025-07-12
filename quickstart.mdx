@@ -1,97 +1,203 @@
 ---
-title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+title: "快速开始"
+description: "5分钟内完成 FluentAI 的安装和配置"
 ---
 
-## Setup your development
+# 快速开始
 
-Learn how to update your docs locally and deploy them to the public.
+跟随这个简单的指南，您将在几分钟内开始使用 FluentAI！
 
-### Edit and preview
+## 🚀 三步上手
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 
-    1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `docs.json` is): ``` mintlify dev ```
-    <Note>
-      If you’re currently using the legacy ```mint.json``` configuration file, please update the Mintlify CLI:
+<Steps>
+  <Step title="下载安装">
+    从官网下载适合您系统的安装包并完成安装
+  </Step>
+  <Step title="配置 API">
+    添加您首选的 AI 服务商 API 密钥
+  </Step>
+  <Step title="开始对话">
+    选择模型，开始您的第一次 AI 对话
+  </Step>
+</Steps>
 
+## 📥 下载和安装
 
-      ```npm i -g mintlify@latest```
-      And run the new upgrade command in your docs repository:
+### Windows 用户
+1. 点击页面顶部的 **"下载 Windows 版"** 按钮
+2. 下载完成后运行 `.exe` 安装程序
+3. 按照安装向导提示完成安装
+4. 从开始菜单或桌面启动 FluentAI
 
-      ```mintlify upgrade```
-      You should now be using the new ```docs.json``` configuration file. Feel free to delete the ```mint.json``` file from your repository.
-    </Note>
-  </Accordion>
-</AccordionGroup>
+### Mac 用户
+1. 点击页面顶部的 **"下载 Mac 版"** 按钮
+2. 下载完成后打开 `.dmg` 文件
+3. 将 FluentAI 拖拽到 "应用程序" 文件夹
+4. 从应用程序文件夹启动 FluentAI
 
-### Deploy your changes
+## ⚙️ 快速配置
 
-<AccordionGroup>
+### 推荐配置方案
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+<Tabs>
+  <Tab title="新手推荐">
+    **DeepSeek（推荐）**
+    - 性价比最高
+    - 中文支持优秀
+    - 配置简单
 
-</AccordionGroup>
+    <Steps>
+      <Step title="获取 API 密钥">
+        访问 [DeepSeek 平台](https://platform.deepseek.com) 注册并获取 API 密钥
+      </Step>
+      <Step title="在 FluentAI 中配置">
+        首页 → 偏好设置 → API设置 → 添加供应商 → 选择 DeepSeek
+      </Step>
+      <Step title="输入密钥">
+        粘贴您的 API 密钥并保存
+      </Step>
+    </Steps>
+  </Tab>
 
-## Update your docs
+  <Tab title="专业用户">
+    **多模型配置**
+    - OpenAI GPT-4：复杂分析任务
+    - Claude 3.5：长文档处理
+    - DeepSeek：日常对话
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+    建议同时配置 2-3 个服务商，根据任务类型灵活切换。
+  </Tab>
 
-<CardGroup>
+  <Tab title="隐私优先">
+    **Ollama 本地部署**
+    - 完全本地运行
+    - 数据不出本地
+    - 需要较高硬件配置
 
-<Card title="Add Content With MDX" icon="file" href="/essentials/markdown">
-  Add content to your docs with MDX syntax.
-</Card>
+    <Steps>
+      <Step title="安装 Ollama">
+        访问 [Ollama 官网](https://ollama.ai) 下载安装
+      </Step>
+      <Step title="下载模型">
+        运行 `ollama pull llama2` 或其他模型
+      </Step>
+      <Step title="连接 FluentAI">
+        在 FluentAI 中选择 Ollama 供应商
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
 
-<Card
-  title="Add Code Blocks"
-  icon="square-code"
-  href="/essentials/code"
->
-  Add code directly to your docs with syntax highlighting.
-</Card>
+## 🎯 第一次对话
 
-<Card
-  title="Add Images"
-  icon="image"
-  href="/essentials/images"
->
-  Add images to your docs to make them more engaging.
-</Card>
+配置完成后，您可以立即开始对话：
 
-<Card
-  title="Add Custom Components"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Add templates to your docs to make them more reusable.
-</Card>
-
+<CardGroup cols={2}>
+  <Card
+    title="💬 简单问答"
+    icon="comments"
+  >
+    "请解释一下人工智能的基本概念"
+  </Card>
+  <Card
+    title="📝 内容创作"
+    icon="pen-to-square"
+  >
+    "帮我写一份项目计划书的大纲"
+  </Card>
+  <Card
+    title="💻 编程助手"
+    icon="code"
+  >
+    "用 Python 写一个计算斐波那契数列的函数"
+  </Card>
+  <Card
+    title="🔍 数据分析"
+    icon="magnifying-glass"
+  >
+    "分析一下这组数据的趋势特征"
+  </Card>
 </CardGroup>
+
+## ⚡ 快捷功能
+
+FluentAI 提供多种快捷功能帮您提高效率：
+
+### 快捷 Prompt 模板
+- 📝 **写作模板**：邮件、报告、文案等
+- 💻 **编程模板**：代码生成、调试、解释
+- 📊 **分析模板**：数据分析、市场研究
+- 🎨 **创意模板**：营销策划、设计思路
+
+### 快捷键操作
+- `Ctrl/Cmd + N`：新建对话
+- `Ctrl/Cmd + ,`：打开设置
+- `Ctrl/Cmd + Shift + P`：快捷 Prompt 面板
+
+## 🔧 故障排除
+
+### 常见问题快速解决
+
+<AccordionGroup>
+  <Accordion icon="key" title="API 密钥无效">
+    1. 检查密钥是否复制完整
+    2. 确认密钥是否已激活
+    3. 验证账户余额是否充足
+    4. 检查 API 权限设置
+  </Accordion>
+
+  <Accordion icon="wifi" title="网络连接问题">
+    1. 检查网络连接
+    2. 尝试切换网络环境
+    3. 检查防火墙设置
+    4. 确认代理配置正确
+  </Accordion>
+
+  <Accordion icon="exclamation-triangle" title="模型响应慢">
+    1. 尝试切换到更快的模型
+    2. 减少单次请求的内容长度
+    3. 检查 API 服务状态
+    4. 优化网络环境
+  </Accordion>
+</AccordionGroup>
+
+## 🎉 下一步
+
+恭喜！您已经成功完成了 FluentAI 的基础配置。现在您可以：
+
+<CardGroup cols={2}>
+  <Card
+    title="深入了解配置"
+    icon="gear"
+    href="/guide/api-config"
+  >
+    学习更详细的 API 配置方法
+  </Card>
+  <Card
+    title="探索更多模型"
+    icon="robot"
+    href="/guide/models"
+  >
+    了解不同模型的特点和选择方法
+  </Card>
+  <Card
+    title="提高对话技巧"
+    icon="comments"
+    href="/guide/chat"
+  >
+    学习如何更有效地与 AI 对话
+  </Card>
+  <Card
+    title="查看完整功能"
+    icon="star"
+    href="/features"
+  >
+    探索 FluentAI 的所有强大功能
+  </Card>
+</CardGroup>
+
+---
+
+<Note>
+需要帮助？请查看我们的 [完整使用指南](/guide/setup) 或联系 [技术支持](mailto:support@fluentai.com)。
+</Note>

@@ -1,0 +1,161 @@
+---
+title: 模型选择与管理
+description: "了解如何添加、选择和管理 AI 模型"
+---
+
+# 模型选择与管理
+
+配置好 API 后，下一步就是选择合适的 AI 模型。FluentAI 支持多种主流模型，您可以根据需求灵活选择。
+
+## 🎯 添加模型
+
+### 配置完成后选择模型
+
+1. **完成 API 配置**：确保您已经配置了至少一个 AI 服务商
+2. **查看可用模型**：系统会自动显示该服务商的所有可用模型
+3. **选择需要的模型**：从列表中选择您想要使用的模型
+
+<img
+  src="https://cdn.nlark.com/yuque/0/2025/png/47475115/1752308924733-f73e551f-1849-414d-b0da-32aede5b4ae1.png"
+  alt="模型选择界面"
+/>
+
+### 模型添加流程
+
+<Steps>
+  <Step title="进入模型管理">
+    在 API 设置页面查看可用模型列表
+  </Step>
+  <Step title="浏览模型">
+    查看每个模型的详细信息和特点
+  </Step>
+  <Step title="添加模型">
+    点击您想要的模型进行添加
+  </Step>
+  <Step title="确认配置">
+    验证模型添加成功，准备开始使用
+  </Step>
+</Steps>
+
+## 🤖 主流模型介绍
+
+### OpenAI 系列
+<CardGroup cols={2}>
+  <Card title="GPT-4o" icon="sparkles">
+    最新的多模态模型，支持文本、图像、音频
+  </Card>
+  <Card title="GPT-4 Turbo" icon="rocket">
+    强大的文本处理能力，适合复杂任务
+  </Card>
+  <Card title="GPT-3.5 Turbo" icon="zap">
+    经济实用，响应速度快
+  </Card>
+</CardGroup>
+
+### Anthropic Claude 系列
+<CardGroup cols={2}>
+  <Card title="Claude 3.5 Sonnet" icon="brain">
+    平衡性能和速度的优秀选择
+  </Card>
+  <Card title="Claude 3 Opus" icon="crown">
+    最强大的推理能力
+  </Card>
+  <Card title="Claude 3 Haiku" icon="leaf">
+    轻量快速，适合简单任务
+  </Card>
+</CardGroup>
+
+### DeepSeek 系列
+<CardGroup cols={2}>
+  <Card title="DeepSeek Chat" icon="chat">
+    中文优化，性价比高
+  </Card>
+  <Card title="DeepSeek Coder" icon="code">
+    专业的代码生成和调试
+  </Card>
+</CardGroup>
+
+### Google Gemini 系列
+<CardGroup cols={2}>
+  <Card title="Gemini Pro" icon="star">
+    Google 的旗舰 AI 模型
+  </Card>
+  <Card title="Gemini Pro Vision" icon="eye">
+    支持图像理解的多模态模型
+  </Card>
+</CardGroup>
+
+## 🎨 模型特点对比
+
+| 模型类型 | 优势 | 适用场景 | 成本 |
+|---------|------|----------|------|
+| **GPT-4 系列** | 推理能力强，多模态支持 | 复杂分析、创作、编程 | 较高 |
+| **Claude 系列** | 安全性高，长文本处理 | 文档分析、安全敏感任务 | 中等 |
+| **DeepSeek** | 中文优化，性价比高 | 中文对话、日常使用 | 较低 |
+| **Gemini** | 集成度高，多模态 | 创意任务、图像分析 | 中等 |
+
+## ⚙️ 模型管理
+
+### 切换模型
+- 在对话界面可以随时切换不同的模型
+- 不同模型有不同的特点和定价
+- 建议根据任务类型选择合适的模型
+
+### 模型参数调整
+某些模型支持参数调整：
+- **Temperature**: 控制回答的创造性
+- **Max Tokens**: 限制回答长度
+- **Top-p**: 控制回答的多样性
+
+## 💡 选择建议
+
+### 新手推荐
+<Steps>
+  <Step title="DeepSeek Chat">
+    作为主力模型，性价比高，中文支持好
+  </Step>
+  <Step title="GPT-3.5 Turbo">
+    作为备用模型，速度快，适合快速问答
+  </Step>
+  <Step title="Claude 3.5 Sonnet">
+    处理长文档和复杂分析任务
+  </Step>
+</Steps>
+
+### 专业用户
+- **编程开发**: DeepSeek Coder + GPT-4
+- **内容创作**: Claude 3 Opus + GPT-4o
+- **数据分析**: GPT-4 + Claude 3.5 Sonnet
+- **图像处理**: GPT-4o + Gemini Pro Vision
+
+## 🔄 模型切换技巧
+
+<Tip>
+**智能选择策略**
+- 简单问答：使用 GPT-3.5 或 DeepSeek
+- 复杂分析：使用 GPT-4 或 Claude 3 Opus
+- 代码相关：优先选择 DeepSeek Coder
+- 图像理解：使用支持视觉的多模态模型
+</Tip>
+
+## ⚠️ 注意事项
+
+<Warning>
+**成本控制**
+- 不同模型的计费标准不同
+- GPT-4 系列相对昂贵，建议按需使用
+- 定期检查 API 使用量和费用
+</Warning>
+
+<Note>
+**性能优化**
+- 选择离您最近的服务器节点
+- 避免在高峰期使用高耗时模型
+- 合理设置 Token 限制
+</Note>
+
+## 🔗 下一步
+
+配置好模型后，您可以：
+- [开始您的第一次对话](/guide/chat) - 学习如何有效使用 AI 助手
+- [了解快捷操作](/guide/chat#快捷功能) - 提高工作效率

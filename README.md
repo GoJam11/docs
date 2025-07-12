@@ -1,32 +1,60 @@
-# Mintlify Starter Kit
+# FluentDeskAI 官网
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+FluentDeskAI 的官方文档网站，基于 Mintlify 构建。
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+## 关于 FluentDeskAI
 
-### Development
+FluentAI 是一款支持跨模型、多模态的桌面 AI 对话工具，提供流畅自然的 AI 交互体验。
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview the documentation changes locally. To install, use the following command
+### 主要特性
+
+- 🤖 **多模型支持** - 支持 OpenAI、Claude、Gemini、DeepSeek 等主流 AI 模型
+- 🎯 **多模态交互** - 支持文本、图片、语音等多种输入方式
+- ⚡ **快捷操作** - 丰富的 Prompt 模板和快捷键支持
+- 🛠️ **易于配置** - 简单的 API 配置流程
+- 🔒 **隐私安全** - 本地存储，支持离线模型
+
+## 开发
+
+### 本地预览
+
+安装 [Mintlify CLI](https://www.npmjs.com/package/mintlify) 来本地预览文档：
+
+```bash
+npm i -g mintlify
+```
+
+在项目根目录运行：
+
+```bash
+mintlify dev
+```
+
+### 项目结构
 
 ```
-npm i -g mint
+/
+├── docs.json          # 网站配置
+├── index.mdx          # 首页
+├── quickstart.mdx     # 快速开始
+├── features.mdx       # 功能特性
+├── guide/             # 使用指南
+│   ├── setup.mdx      # 设置指南
+│   ├── api-config.mdx # API配置
+│   ├── models.mdx     # 模型管理
+│   └── chat.mdx       # 对话功能
+├── images/            # 图片资源
+└── logo/              # Logo 文件
 ```
 
-Run the following command at the root of your documentation (where docs.json is)
+### 发布
 
-```
-mint dev
-```
+使用 Mintlify 的 GitHub 应用来自动部署。推送到主分支后会自动发布到生产环境。
 
-### Publishing Changes
+## 贡献
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+欢迎提交 Issue 和 Pull Request 来改进文档。
 
-#### Troubleshooting
+## 许可证
 
-- If the dev environment isn't running - Run `mint update` to ensure you have the most recent version of the CLI.
-- Page loads as a 404 - Make sure you are running in a folder with `docs.json`
+本项目采用 MIT 许可证。
