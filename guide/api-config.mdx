@@ -21,97 +21,115 @@ FluentAI 支持多种主流 AI 服务商，本指南将详细介绍如何配置�
 
 FluentAI 支持三种类型的服务商配置：
 
-### 自定义供应商
-适用于有自定义 API 端点的服务商
+<Tabs>
+  <Tab title="DeepSeek">
+    DeepSeek 是国内优秀的 AI 模型服务商，仅需要提供 API 密钥即可使用。
 
-<Steps>
-  <Step title="填写基本信息">
-    输入供应商名称和 API 基础 URL
-  </Step>
-  <Step title="添加 API 密钥">
-    输入您的 API 密钥
-  </Step>
-  <Step title="获取模型列表">
-    点击"获取全部模型"按钮
-  </Step>
-  <Step title="添加自定义模型">
-    选择"添加自定义模型"完成配置
-  </Step>
-</Steps>
+    <img
+      src="/images/deepseek-config.png"
+      alt="DeepSeek配置示例"
+    />
 
-<img
-  src="/images/custom-provider-config.png"
-  alt="自定义供应商配置"
-  
-/>
+    <Steps>
+      <Step title="选择供应商">
+        在供应商列表中选择 "DeepSeek"
+      </Step>
+      <Step title="输入 API 密钥">
+        粘贴您的 DeepSeek API 密钥
+      </Step>
+      <Step title="保存配置">
+        点击保存，系统会自动获取可用模型
+      </Step>
+    </Steps>
 
-### 内置供应商（仅需 API 密钥）
-以下服务商只需要提供 API 密钥即可使用：
+    <Note>
+      建议优先配置 DeepSeek，性价比较高且模型质量优秀。
+    </Note>
 
-<CardGroup cols={2}>
-  <Card title="DeepSeek" icon="brain">
-    国内优秀的 AI 模型服务商
-  </Card>
-  <Card title="OpenAI" icon="openai">
-    GPT 系列模型的官方服务商
-  </Card>
-  <Card title="Gemini" icon="google">
-    Google 的 AI 模型服务
-  </Card>
-  <Card title="Anthropic" icon="robot">
-    Claude 系列模型的官方服务商
-  </Card>
-  <Card title="OpenRouter" icon="route">
-    多模型聚合服务平台
-  </Card>
-</CardGroup>
+    **如何获取 API 密钥：**
+    访问 [DeepSeek 开发者平台](https://platform.deepseek.com/api-keys) 注册并获取密钥。
+  </Tab>
 
-#### DeepSeek 配置示例
-<img
-  src="/images/deepseek-config.png"
-  alt="DeepSeek配置示例"
-  
-/>
+  <Tab title="Ollama">
+    Ollama 是本地运行的 AI 模型服务，适合对隐私要求较高的用户。
 
-<Steps>
-  <Step title="选择供应商">
-    在供应商列表中选择 "DeepSeek"
-  </Step>
-  <Step title="输入 API 密钥">
-    粘贴您的 DeepSeek API 密钥
-  </Step>
-  <Step title="保存配置">
-    点击保存，系统会自动获取可用模型
-  </Step>
-</Steps>
+    <Warning>
+      使用 Ollama 前，您需要先在本地安装 Ollama 客户端。
+    </Warning>
 
-### 本地服务商（需要客户端）
-#### Ollama 配置
+    <img
+      src="/images/ollama-config.png"
+      alt="Ollama配置"
+    />
 
-<Note>
-使用 Ollama 前，您需要先在本地安装 Ollama 客户端。
-</Note>
+    <Steps>
+      <Step title="安装 Ollama">
+        访问 [Ollama 官网](https://ollama.ai) 下载并安装客户端
+      </Step>
+      <Step title="启动 Ollama">
+        确保 Ollama 服务正在运行
+      </Step>
+      <Step title="在 FluentAI 中添加">
+        选择 Ollama 供应商，通常无需额外配置
+      </Step>
+      <Step title="下载模型">
+        通过 Ollama 下载您需要的模型
+      </Step>
+    </Steps>
 
-<img
-  src="/images/ollama-config.png"
-  alt="Ollama配置"
-  
-/>
+    <Tip>
+      Ollama 的优势：
+      - 完全本地运行，保护隐私
+      - 无需 API 密钥，免费使用
+      - 支持多种开源模型
+    </Tip>
+  </Tab>
 
-<Steps>
-  <Step title="安装 Ollama">
-    访问 [Ollama 官网](https://ollama.ai) 下载并安装客户端
-  </Step>
-  <Step title="启动 Ollama">
-    确保 Ollama 服务正在运行
-  </Step>
-  <Step title="在 FluentAI 中添加">
-    选择 Ollama 供应商，通常无需额外配置
-  </Step>
-  <Step title="下载模型">
-    通过 Ollama 下载您需要的模型
-  </Step>
-</Steps>
+  <Tab title="自定义供应商">
+    适用于有自定义 API 端点的服务商，提供最大的灵活性。
+
+    <img
+      src="/images/custom-provider-config.png"
+      alt="自定义供应商配置"
+    />
+
+    <Steps>
+      <Step title="填写基本信息">
+        输入供应商名称和 API 基础 URL
+      </Step>
+      <Step title="添加 API 密钥">
+        输入您的 API 密钥
+      </Step>
+      <Step title="获取模型列表">
+        点击"获取全部模型"按钮
+      </Step>
+      <Step title="添加自定义模型">
+        选择"添加自定义模型"完成配置
+      </Step>
+    </Steps>
+
+    **适用场景：**
+    - 使用企业内部部署的模型服务
+    - 连接第三方 AI 服务平台
+    - 使用兼容 OpenAI API 格式的服务
+
+    **其他内置供应商：**
+    <CardGroup cols={2}>
+      <Card title="OpenAI" icon="openai">
+        GPT 系列模型的官方服务商
+      </Card>
+      <Card title="Gemini" icon="google">
+        Google 的 AI 模型服务
+      </Card>
+      <Card title="Anthropic" icon="robot">
+        Claude 系列模型的官方服务商
+      </Card>
+      <Card title="OpenRouter" icon="route">
+        多模型聚合服务平台
+      </Card>
+    </CardGroup>
+  </Tab>
+</Tabs>
 
 ## 重要提示
 
@@ -146,9 +164,3 @@ A: 请检查：
 
 ### Q: 可以同时配置多个供应商吗？
 A: 是的！FluentAI 支持同时配置多个供应商，您可以在不同场景下切换使用不同的模型。
-
-## 下一步
-
-完成 API 配置后，您可以：
-- [选择和配置模型](/guide/models) - 了解如何添加和管理模型
-- [开始对话](/guide/chat) - 学习如何使用 AI 助手
