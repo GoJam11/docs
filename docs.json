@@ -15,7 +15,7 @@
         "groups": [
           {
             "group": "开始使用",
-            "pages": ["index", "quickstart", "features"]
+            "pages": ["index", "quickstart", "features", "download"]
           }
         ]
       },
@@ -51,14 +51,14 @@
   "navbar": {
     "links": [
       {
-        "label": "支持",
-        "href": "mailto:support@fluentai.com"
+        "label": "文档",
+        "href": "https://fluentdesk.guohere.com/guide/setup"
       }
     ],
     "primary": {
       "type": "button",
       "label": "立即下载",
-      "href": "https://baidu.com"
+      "href": "https://fluentdesk.guohere.com/download"
     }
   },
   "footer": {
