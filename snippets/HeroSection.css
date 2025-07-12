@@ -271,7 +271,6 @@
   padding: 1rem 1.5rem;
   background: var(--glass-bg-medium);
   backdrop-filter: blur(20px);
-  border: 1px solid var(--border-medium);
   border-radius: 12px;
   color: var(--primary-text);
   cursor: pointer;
