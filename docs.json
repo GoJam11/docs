@@ -15,7 +15,7 @@
         "groups": [
           {
             "group": "开始使用",
-            "pages": ["index", "quickstart", "features", "download"]
+            "pages": ["index"]
           }
         ]
       },
@@ -28,21 +28,14 @@
               "guide/setup",
               "guide/api-config",
               "guide/models",
-              "guide/chat"
+              "guide/chat",
+              "features"
             ]
           }
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/fluentai",
-          "icon": "github"
-        }
-      ]
-    }
+    "global": {}
   },
   "logo": {
     "light": "/logo/light.png",
@@ -58,12 +51,7 @@
     "primary": {
       "type": "button",
       "label": "立即下载",
-      "href": "https://fluentdesk.guohere.com/download"
-    }
-  },
-  "footer": {
-    "socials": {
-      "github": "https://github.com/fluentai"
+      "href": "https://fluentdesk.guohere.com/"
     }
   }
 }
