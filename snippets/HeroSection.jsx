@@ -23,7 +23,7 @@ export const HeroSection = () => {
               智能桌面助手，让工作更高效
             </p>
             <p className="hero-description">
-              体验全新的AI驱动桌面管理工具，提升您的工作效率，简化日常任务
+              体验全新的AI会话管理工具，提升您的工作效率，简化日常任务
             </p>
             
             {/* 下载按钮 */}
