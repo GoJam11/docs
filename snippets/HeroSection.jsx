@@ -74,7 +74,7 @@ export const HeroSection = () => {
                 <div className="ai-interface">
                   <div className="ai-message">
                     <div className="message-bubble">
-                      您好！我是 Fluent Desk AI，准备为您提供智能桌面管理服务
+                      您好！我是 Fluent Desk AI，准备为您提供智能桌面会话管理服务
                     </div>
                   </div>
                 </div>
